@@ -2,15 +2,24 @@ header {
 	background-image: url('../img/header.png');
 }
 
+.back-arrow {
+	color: #F05F40;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
 
 /* Flashcard Page */
 
 .flashcard {
 	margin: auto;
-	height: 350px;
-	width: 600px;
-	padding-top: 120px;
+	height: 300px;
+	width: 560px;
+	padding-top: 110px;
 	background: #F05F40;
+	border-radius: 5px;
 }
 
 .flashcard-transition-left {
@@ -26,7 +35,7 @@ header {
 .translate {
 	display: block;
 	font-size: 2em;
-	margin-top: 30px;
+	margin-top: 20px;
 	color: white;
 }
 
