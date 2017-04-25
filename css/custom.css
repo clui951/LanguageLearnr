@@ -2,16 +2,36 @@ header {
 	background-image: url('../img/header.png');
 }
 
+
+/* Flashcard Page */
+
+.flashcard {
+	margin: auto;
+	height: 350px;
+	width: 600px;
+	padding-top: 120px;
+	background: #F05F40;
+}
+
 .flashcard-transition-left {
-	margin-right:170px;
-	font-size:25px;
+	margin-right: 180px;
+	font-size: 2em;
 }
+
 .flashcard-transition-right {
-	margin-left:170px;
-	font-size:25px;
+	margin-left: 180px;
+	font-size: 2em;
 }
+
 .translate {
-	font-size:25px
+	display: block;
+	font-size: 2em;
+	margin-top: 30px;
+	color: white;
+}
+
+.translate:hover {
+	color: white;
 }
 
 
