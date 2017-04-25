@@ -15,6 +15,37 @@ header {
 }
 
 
+/* Language Select Styles */
+
+#language-select {
+	text-align: center;
+}
+
+#language-select ul {
+	list-style: none;
+	padding: 0;
+}
+
+#language-select ul li {
+	display: block;
+	height: 50px;
+	width: 300px;
+	margin: 25px auto;
+	background: #F05F40;
+	border-radius: 5px;
+}
+
+#language-select ul li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-size: 1.4em;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+
 /* Contents Page Styles */
 
 #customization {
@@ -44,6 +75,7 @@ header {
 	padding-top: 1em;
 	text-decoration: none;
 }
+
 
 /* Dashboard Styles */
 
