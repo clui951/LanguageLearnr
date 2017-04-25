@@ -10,3 +10,34 @@ header {
 	margin-left:170px;
 	font-size:25px;
 }
+
+
+/* Dashboard Styles */
+
+#chartContainer1 {
+	width: 45%;
+	height: 290px;
+	display: inline-block;
+	padding-right:25px;
+}
+
+#chartContainer2 {
+	width: 45%;
+	height: 290px;
+	display: inline-block;
+	padding-left:25px;
+}
+
+#chartContainer3 {
+	width: 45%;
+	height: 290px;
+	display: inline-block;
+	padding-right:25px;
+}
+
+#chartContainer4 {
+	width: 45%;
+	height: 290px;
+	display: inline-block;
+	padding-left:25px;
+}
