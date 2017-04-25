@@ -1,13 +1,73 @@
-<!DOCTYPE HTML>
-<html>
-<head>  
-<div class="header-content">
-  <div class="header-content-inner">
-    <h1><u><center>German Dashboards</center></u></h1>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-  <script type="text/javascript">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LanguageLearnr</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+<body style="">
+
+  <div class="header-content">
+    <div class="header-content-inner">
+      <div class="title">German Dashboard</div>
+    </div>
+  </div>
+
+  <div class="left">
+    <div id="chartContainer1"></div>
+  </div>
+  <div class="right">
+    <div id="chartContainer4"></div>
+  </div>
+
+  <div class="left">
+    <div id="chartContainer3"></div>
+  </div>
+  <div class="right">
+    <div id="chartContainer2"></div>
+  </div>
+  <!-- <H2><a href="german_contents.html">Back</a></H2> -->
+
+
+  <!-- Custom graph scripts -->
+  <script type="text/javascript" src="js/canvasjs.min.js"></script>
+</body>
+
+<script type="text/javascript">
   window.onload = function () {
     var chart = new CanvasJS.Chart("chartContainer1",
     {
@@ -216,19 +276,7 @@
 
         chart.render();
 
-
-
-}
+  }
 </script>
-<script type="text/javascript" src="js/canvasjs.min.js"></script></head>
-<body style="">
-  <div id="chartContainer1" style="width: 45%; height: 290px;display: inline-block; padding-right:25px"></div>
-  <div id="chartContainer4" style="width: 45%; height: 290px;display: inline-block; padding-left:25px"></div>
-
-  <br />
-  <div id="chartContainer3" style="width: 45%; height: 290px;display: inline-block; padding-right:25px"></div>
-  <div id="chartContainer2" style="width: 45%; height: 290px;display: inline-block; padding-left:25px"></div>
-  <!-- <H2><a href="german_contents.html">Back</a></H2> -->
-</body>
 
 </html>
