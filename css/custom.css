@@ -160,3 +160,31 @@ header {
 	display: inline-block;
 	margin-bottom: 30px;
 }
+
+
+/* Category Selection */
+
+.category-box {
+	padding: 8px 16px;
+	margin: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	background: #F05F40;
+	font-size: 1.2em;
+}
+
+.category-box input {
+	transform: scale(1.25);
+	margin-right: 8px;
+	height: 15px;
+}
+
+input[type=submit] {
+	margin: 30px auto;
+	display: block;
+	background: #F05F40;
+	border: none;
+	padding: 8px 24px;
+	font-size: 1.4em;
+	border-radius: 5px;
+}
