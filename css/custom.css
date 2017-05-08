@@ -118,7 +118,8 @@ header {
 }
 
 #dash-header {
-	background: #F05F40;
+	background: url('../img/dash-header.png');
+	background-size: cover;
 }
 
 .content {
@@ -133,6 +134,7 @@ header {
 	font-size: 3em;
 	text-align: center;
 	margin: 1em;
+	font-weight: 700;
 }
 
 .left, .right {
