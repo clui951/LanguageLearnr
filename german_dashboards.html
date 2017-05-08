@@ -39,34 +39,68 @@
 
 
 
-<body style="">
+<body id="dash-body">
 
-  <div class="header-content">
-    <div class="header-content-inner">
-      <div class="title">German Dashboard</div>
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="index.html">Language Learnr</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#help">Help</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+
+  <header id="dash-header">
+      <div class="header-content">
+          <div class="header-content-inner">
+              <div class="title">German Dashboard</div>
+          </div>
+      </div>
+  </header>
+
+  <div class="content">
+    <div class="left">
+      <label>Words Learned Per Month</label>
+      <div id="chartContainer1"></div>
     </div>
-  </div>
+    <div class="right">
+      <label>Most Commonly Missed Words</label>
+      <div id="chartContainer4"></div>
+    </div>
 
-  <div class="left">
-    <div id="chartContainer1"></div>
-  </div>
-  <div class="right">
-    <div id="chartContainer4"></div>
-  </div>
+    <div class="left">
+      <label>Most Commonly Missed Words</label>
+      <div id="chartContainer3"></div>
+    </div>
+    <div class="right">
+      <label>Top Categories Of Words Learned</label>
+      <div id="chartContainer2"></div>
+    </div>
+    <!-- <H2><a href="german_contents.html">Back</a></H2> -->
 
-  <div class="left">
-    <div id="chartContainer3"></div>
-  </div>
-  <div class="right">
-    <div id="chartContainer2"></div>
-  </div>
-  <!-- <H2><a href="german_contents.html">Back</a></H2> -->
-
-  <div class="back-arrow">
-      <a href="german_contents.html" style="color:black;">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-          Go back
-      </a>
+    <div class="back-arrow">
+        <a href="german_contents.html" style="color:black;">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Go back
+        </a>
+    </div>
   </div>
 
 
@@ -79,9 +113,9 @@
     var chart = new CanvasJS.Chart("chartContainer1",
     {
       theme: "theme2",
-      title:{
-        text: "Words Learned per Month"
-      },
+      // title:{
+      //   text: "Words Learned per Month"
+      // },
       animationEnabled: true,
       axisX: {
         valueFormatString: "MMM",
@@ -125,9 +159,9 @@
 
     var chart = new CanvasJS.Chart("chartContainer2",
     {
-      title:{
-        text: "Top Categories of Words Learned"
-      },
+      // title:{
+      //   text: "Top Categories of Words Learned"
+      // },
       exportFileName: "Pie Chart",
       exportEnabled: true,
       animationEnabled: true,
@@ -158,10 +192,10 @@
 
 
     var chart = new CanvasJS.Chart("chartContainer3", {
-            title: {
-              text: "Quiz Performance",
-              fontSize: 30
-            },
+            // title: {
+            //   text: "Quiz Performance",
+            //   fontSize: 30
+            // },
             animationEnabled: true,
             axisX: {
 
@@ -232,13 +266,12 @@
 
 
     var chart = new CanvasJS.Chart("chartContainer4", {
-            title: {
-                text: "Most Commonly Missed Words",
-                fontFamily: "Verdana",
-                fontColor: "Peru",
-                fontSize: 28
+            // title: {
+            //     fontFamily: "Verdana",
+            //     fontColor: "Peru",
+            //     fontSize: 28
 
-            },
+            // },
             animationEnabled: true,
             axisY: {
                 tickThickness: 0,
