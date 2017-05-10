@@ -30,8 +30,6 @@ var res = httpGet("https://api.airtable.com/v0/appzAhnNiUb6ky3nW/Table%201?maxRe
 var resJSON = JSON.parse(res);
 var resList = resJSON["records"];
 
-console.log(res);
-
 var categoriesList = {};
 
 for (var i = 0; i < resList.length; i++) {
