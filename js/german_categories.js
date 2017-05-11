@@ -56,6 +56,15 @@ if (fashion.nextSibling.textContent.trim() in categoriesList) {
 	fashion.checked = true;
 }
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
 function handleRequest() {
   if (travel.checked && !("Travel" in categoriesList)) {
   	var data = {};
@@ -83,6 +92,8 @@ function handleRequest() {
   } else if (!fashion.checked && "Fashion" in categoriesList) {
   	httpDelete("https://api.airtable.com/v0/appzAhnNiUb6ky3nW/Table%201/" + categoriesList["Fashion"]);
   }
+
+  document.getElementById("saving").style.display = "block";
 
   return false;
 }

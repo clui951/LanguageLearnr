@@ -195,3 +195,10 @@ input[type=submit] {
 	font-size: 1.4em;
 	border-radius: 5px;
 }
+
+#saving {
+	display: none;
+	color: rgba(0,255,0,1);
+	margin: 10px auto;
+	font-size: 1.4em;
+}
